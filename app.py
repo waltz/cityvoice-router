@@ -1,3 +1,4 @@
+# coding: utf8
 from flask import Flask, request
 
 app = Flask(__name__)
@@ -11,12 +12,12 @@ def call():
     print '/call:', request
     print '/call:', repr(request.data)
     print '/call:', repr(request.form)
-    return '''<?xml version="1.0" encoding="UTF-8"?>
+    return u'''<?xml version="1.0" encoding="UTF-8"?>
 <Response>
 <Gather timeout="15" numDigits="1" action="/select">
-<Say voice="man" language="en">Press 1 for English.</Say>
-<Say voice="man" language="en">Press 2 for Spanish.</Say>
-<Say voice="man" language="en">Press 3 for Chinese.</Say>
+<Say voice="alice" language="en">Press one for English.</Say>
+<Say voice="alice" language="es">Para Español oprima dos.</Say>
+<Say voice="alice" language="zh-CN">按3普通话</Say>
 </Gather>
 </Response>'''
 
