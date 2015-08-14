@@ -28,8 +28,9 @@ def select():
     digits = request.form.get('Digits')
     return '''<?xml version="1.0" encoding="UTF-8"?>
 <Response>
-<Say voice="man" language="en">You typed the number {}</Say>
-</Response>'''.format(digits)
+<Say voice="man" language="en">You typed the number {n}</Say>
+<Redirect method="POST">https://cityvoice-smells-00{n}.herokuapp.com/calls</Redirect>
+</Response>'''.format(n=digits)
 
 if __name__ == '__main__':
     app.run(debug=True)
