@@ -11,7 +11,10 @@ def call():
     print request
     print repr(request.data)
     print repr(request.form)
-    return 'Goodbye World'
+    return '''<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say voice="man" language="en">Speak friend and enter</Say>
+</Response>'''
 
 if __name__ == '__main__':
     app.run(debug=True)
