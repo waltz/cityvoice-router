@@ -15,8 +15,8 @@ def call():
     return u'''<?xml version="1.0" encoding="UTF-8"?>
 <Response>
 <Gather timeout="15" numDigits="1" action="/select">
-<Say voice="alice" language="en">Press one for English.</Say>
-<Say voice="alice" language="es">Para Español oprima dos.</Say>
+<Say voice="alice" language="en-US">Press one for English.</Say>
+<Say voice="alice" language="es-MX">Para Español oprima dos.</Say>
 <Say voice="alice" language="zh-CN">按3普通话</Say>
 </Gather>
 </Response>'''
