@@ -29,7 +29,7 @@ def select():
     digits = request.form.get('Digits')
     
     apps = {
-        '1': 'cityvoice-oakland-parks',
+        '1': 'cityvoice-oakland-parks-en',
         '2': 'cityvoice-oakland-parks-es',
         '3': 'cityvoice-oakland-parks-zh'
         }
