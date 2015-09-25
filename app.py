@@ -36,7 +36,6 @@ def select():
     
     return '''<?xml version="1.0" encoding="UTF-8"?>
 <Response>
-<Say voice="man" language="en">You typed the number {n}</Say>
 <Redirect method="POST">https://{app}.herokuapp.com/calls</Redirect>
 </Response>'''.format(app=apps[digits])
 
