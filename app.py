@@ -29,9 +29,9 @@ def select():
     digits = request.form.get('Digits')
     
     apps = {
-        '1': 'cityvoice-oakland-parks-en',
-        '2': 'cityvoice-oakland-parks-es',
-        '3': 'cityvoice-oakland-parks-zh'
+        '1': 'cityvoice-oaklandparksurvey-en',
+        '2': 'cityvoice-oaklandparksurvey-es',
+        '3': 'cityvoice-oaklandparksurvey-zh'
         }
     
     return '''<?xml version="1.0" encoding="UTF-8"?>
