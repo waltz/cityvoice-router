@@ -27,13 +27,13 @@ def select():
     print '/select:', repr(request.data)
     print '/select:', repr(request.form)
     digits = request.form.get('Digits')
-    
+
     apps = {
-        '1': 'cityvoice-oaklandparksurvey-en',
-        '2': 'cityvoice-oaklandparksurvey-es',
-        '3': 'cityvoice-oaklandparksurvey-zh'
+        '1': 'cityvoice-sf-en',
+        '2': 'cityvoice-sf-es',
+        '3': 'cityvoice-sf-zh'
         }
-    
+
     return '''<?xml version="1.0" encoding="UTF-8"?>
 <Response>
 <Redirect method="POST">https://{app}.herokuapp.com/calls</Redirect>
